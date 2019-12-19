@@ -1,4 +1,11 @@
+import time
 from furl import furl
+
+def current_milli_time():
+    """
+    Returns the current unix time in milliseconds
+    """
+    return int(round(time.time() * 1000))
 
 def update_url(previous_url, new_next_pub_date):
     """
